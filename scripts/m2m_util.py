@@ -102,7 +102,7 @@ def images_to_video_mac(images, frames, out_path):
     if not os.path.exists(os.path.dirname(out_path)):
         os.makedirs(os.path.dirname(out_path), exist_ok=True)
 
-    fourcc = cv2.VideoWriter_fourcc(*'avc1')
+    fourcc = cv2.VideoWriter_fourcc(*'mp4v')
     if len(images) > 0:
         img = images[0]
         img_width, img_height = img.size
